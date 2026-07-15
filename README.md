@@ -21,11 +21,20 @@ El análisis se estructuró en las siguientes etapas clave:
 
 ## 🚀 Cómo Ejecutar el Notebook
 Para ejecutar este análisis, sigue estos pasos:
-1.  Abre el notebook en Google Colab.
-2.  Asegúrate de que los archivos `plans.csv`, `users_latam.csv`, y `usage.csv` estén accesibles en el entorno de Colab, preferiblemente en un directorio `/datasets/` o actualiza las rutas de archivo en la celda de carga de datos.
-3.  Ejecuta las celdas de código secuencialmente para replicar el análisis.
-
+1.  **Si usas Google Colab:**
+    - Abre el notebook en Google Colab.
+    - Asegúrate de que los archivos `plans.csv`, `users_latam.csv`, y `usage.csv` estén accesibles en el entorno de Colab, preferiblemente en un directorio `/datasets/` o actualiza las rutas de archivo en la celda de carga de datos.
+    - Ejecuta las celdas de código secuencialmente para replicar el análisis.
+2.  **Si usas Jupyter Notebook (local):**
+    - Clona o descarga este repositorio a tu máquina local.
+    - Navega al directorio donde guardaste el notebook y los archivos de datos (`plans.csv`, `users_latam.csv`, `usage.csv`).
+    - Abre una terminal en ese directorio y ejecuta `jupyter notebook`.
+    - Abre el archivo `.ipynb` en tu navegador.
+    - Asegúrate de que los archivos CSV estén en el mismo directorio que el notebook o actualiza las rutas de archivo en la celda de carga de datos.
+    - Ejecuta las celdas de código secuencialmente.
+  
 ## 📝 Guía de Reproducción
-- **Entorno**: Google Colab (Python 3.x)
-- **Librerías**: `pandas`, `seaborn`, `matplotlib.pyplot`, `numpy` (todas estándar en Colab, no requieren instalación adicional a menos que se especifique).
-- **Datos**: Los archivos CSV deben ser cargados en el entorno de Colab en la ruta especificada en el notebook (`/datasets/`).
+- **Entorno**: Google Colab o Jupyter Notebook (Python 3.x)
+- **Librerías**: `pandas`, `seaborn`, `matplotlib.pyplot`, `numpy`.
+    - **Para Jupyter Notebook (instalación local):** Si no las tienes, puedes instalarlas usando `pip install pandas seaborn matplotlib numpy`.
+- **Datos**: Los archivos CSV (`plans.csv`, `users_latam.csv`, `usage.csv`) deben estar en el mismo directorio que el notebook o en la ruta especificada en el código (ej. `/datasets/` si se usa Colab o una ruta relativa para Jupyter).
